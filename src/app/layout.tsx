@@ -7,46 +7,30 @@ import { ServiceWrapper } from "@/components/ServiceWrapper";
 import Tag from "@/tag/Tag";
 
 const halant = Halant({
-  variable: "--font-halant",
-  subsets: ["latin"],
+  variable: "--font-halant",  subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+  variable: "--font-inter",  subsets: ["latin"],
 });
 
 const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
+  variable: "--font-open-sans",  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "CatalogOS | Professional Product Catalog Platform",
-  description: "Image-first product catalog platform with admin dashboard, bulk image import, hierarchical organization, and optional e-commerce. Built for scale and designed for minimal aesthetics.",
-  keywords: "product catalog, image gallery, admin dashboard, e-commerce, SaaS, bulk upload, inventory management",
-  metadataBase: new URL("https://catalogos.io"),
+  title: "CatalogOS | Professional Product Catalog Platform",  description: "Image-first product catalog platform with admin dashboard, bulk image import, hierarchical organization, and optional e-commerce. Built for scale and designed for minimal aesthetics.",  keywords: "product catalog, image gallery, admin dashboard, e-commerce, SaaS, bulk upload, inventory management",  metadataBase: new URL("https://catalogos.io"),
   alternates: {
-    canonical: "https://catalogos.io",
-  },
+    canonical: "https://catalogos.io"},
   openGraph: {
-    title: "CatalogOS - Product Catalog Platform",
-    description: "Build and manage professional product catalogs with image browsing, admin controls, and e-commerce capabilities.",
-    siteName: "CatalogOS",
-    type: "website",
-    images: [
+    title: "CatalogOS - Product Catalog Platform",    description: "Build and manage professional product catalogs with image browsing, admin controls, and e-commerce capabilities.",    siteName: "CatalogOS",    type: "website",    images: [
       {
-        url: "http://img.b2bpic.net/free-vector/ecommerce-email-template_52683-49444.jpg",
-        alt: "CatalogOS Platform",
-      },
+        url: "http://img.b2bpic.net/free-vector/ecommerce-email-template_52683-49444.jpg",        alt: "CatalogOS Platform"},
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "CatalogOS - Professional Product Catalog",
-    description: "Scalable image-first catalog platform with powerful admin dashboard and e-commerce integration.",
-    images: ["http://img.b2bpic.net/free-vector/ecommerce-email-template_52683-49444.jpg"],
+    card: "summary_large_image",    title: "CatalogOS - Professional Product Catalog",    description: "Scalable image-first catalog platform with powerful admin dashboard and e-commerce integration.",    images: ["http://img.b2bpic.net/free-vector/ecommerce-email-template_52683-49444.jpg"],
   },
   robots: {
     index: true,
