@@ -24,9 +24,9 @@ export default function CatalogPage() {
           brandName="CatalogOS"
           navItems={[
             { name: "Public", id: "/" },
-            { name: "Features", id: "#features" },
-            { name: "Pricing", id: "#pricing" },
-            { name: "Docs", id: "#docs" },
+            { name: "Catalog", id: "/catalog" },
+            { name: "About", id: "/about" },
+            { name: "Contact", id: "/contact" },
           ]}
           button={{ text: "Launch Admin", href: "/admin" }}
           animateOnLoad={true}
@@ -44,33 +44,13 @@ export default function CatalogPage() {
           useInvertedBackground={false}
           products={[
             {
-              id: "prod-1",
-              name: "Premium Product A",
-              price: "$149.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=3",
-              imageAlt: "Premium product A",
-            },
+              id: "prod-1",              name: "Premium Product A",              price: "$149.99",              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=3",              imageAlt: "Premium product A"},
             {
-              id: "prod-2",
-              name: "Deluxe Item B",
-              price: "$249.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=3",
-              imageAlt: "Deluxe item B",
-            },
+              id: "prod-2",              name: "Deluxe Item B",              price: "$249.99",              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=3",              imageAlt: "Deluxe item B"},
             {
-              id: "prod-3",
-              name: "Exclusive Collection C",
-              price: "$199.99",
-              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=3",
-              imageAlt: "Exclusive collection C",
-            },
+              id: "prod-3",              name: "Exclusive Collection C",              price: "$199.99",              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=3",              imageAlt: "Exclusive collection C"},
             {
-              id: "prod-4",
-              name: "Limited Edition D",
-              price: "$299.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=4",
-              imageAlt: "Limited edition D",
-            },
+              id: "prod-4",              name: "Limited Edition D",              price: "$299.99",              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=4",              imageAlt: "Limited edition D"},
           ]}
         />
       </div>
@@ -86,26 +66,11 @@ export default function CatalogPage() {
           useInvertedBackground={true}
           products={[
             {
-              id: "prod-5",
-              name: "Premium Selection E",
-              price: "$179.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=4",
-              imageAlt: "Premium selection E",
-            },
+              id: "prod-5",              name: "Premium Selection E",              price: "$179.99",              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=4",              imageAlt: "Premium selection E"},
             {
-              id: "prod-6",
-              name: "Signature Line F",
-              price: "$219.99",
-              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=4",
-              imageAlt: "Signature line F",
-            },
+              id: "prod-6",              name: "Signature Line F",              price: "$219.99",              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=4",              imageAlt: "Signature line F"},
             {
-              id: "prod-7",
-              name: "Exclusive Premium G",
-              price: "$279.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=5",
-              imageAlt: "Exclusive premium G",
-            },
+              id: "prod-7",              name: "Exclusive Premium G",              price: "$279.99",              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=5",              imageAlt: "Exclusive premium G"},
           ]}
         />
       </div>
@@ -121,19 +86,9 @@ export default function CatalogPage() {
           useInvertedBackground={false}
           products={[
             {
-              id: "prod-8",
-              name: "Customer Favorite H",
-              price: "$189.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=5",
-              imageAlt: "Customer favorite H",
-            },
+              id: "prod-8",              name: "Customer Favorite H",              price: "$189.99",              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=5",              imageAlt: "Customer favorite H"},
             {
-              id: "prod-9",
-              name: "Best Seller I",
-              price: "$239.99",
-              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=5",
-              imageAlt: "Best seller I",
-            },
+              id: "prod-9",              name: "Best Seller I",              price: "$239.99",              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=5",              imageAlt: "Best seller I"},
           ]}
         />
       </div>
@@ -144,30 +99,27 @@ export default function CatalogPage() {
           copyrightText="© 2025 CatalogOS | Professional Product Catalog Platform"
           columns={[
             {
-              title: "Product",
-              items: [
-                { label: "Features", href: "#features" },
-                { label: "Pricing", href: "#pricing" },
+              title: "Product",              items: [
+                { label: "Features", href: "/#features" },
+                { label: "Catalog", href: "/catalog" },
                 { label: "Bulk Import", href: "#" },
-                { label: "Admin Dashboard", href: "#" },
+                { label: "Admin Dashboard", href: "/admin" },
               ],
             },
             {
-              title: "Resources",
-              items: [
+              title: "Resources",              items: [
                 { label: "Documentation", href: "#" },
                 { label: "API Reference", href: "#" },
                 { label: "Guides", href: "#" },
-                { label: "Support", href: "#" },
+                { label: "Support", href: "/contact" },
               ],
             },
             {
-              title: "Company",
-              items: [
-                { label: "About Us", href: "#" },
+              title: "Company",              items: [
+                { label: "About Us", href: "/about" },
                 { label: "Blog", href: "#" },
                 { label: "Careers", href: "#" },
-                { label: "Contact", href: "#" },
+                { label: "Contact", href: "/contact" },
               ],
             },
           ]}

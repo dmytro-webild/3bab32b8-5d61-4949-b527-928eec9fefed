@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import ContactSplitForm from "@/components/sections/contact/ContactSplitForm";
-import FaqSplitMedia from "@/components/sections/faq/FaqSplitMedia";
+import FaqSplitText from "@/components/sections/faq/FaqSplitText";
 import FooterBase from "@/components/sections/footer/FooterBase";
 
 export default function ContactPage() {
@@ -29,9 +29,9 @@ export default function ContactPage() {
           brandName="CatalogOS"
           navItems={[
             { name: "Public", id: "/" },
-            { name: "Features", id: "#features" },
-            { name: "Pricing", id: "#pricing" },
-            { name: "Docs", id: "#docs" },
+            { name: "Catalog", id: "/catalog" },
+            { name: "About", id: "/about" },
+            { name: "Contact", id: "/contact" },
           ]}
           button={{ text: "Launch Admin", href: "/admin" }}
           animateOnLoad={true}
@@ -47,9 +47,7 @@ export default function ContactPage() {
             { name: "email", type: "email", placeholder: "Work Email", required: true },
           ]}
           textarea={{
-            name: "message",
-            placeholder: "Tell us about your catalog business and what you're looking for...",
-            rows: 5,
+            name: "message",            placeholder: "Tell us about your catalog business and what you're looking for...",            rows: 5,
             required: true,
           }}
           useInvertedBackground={false}
@@ -63,48 +61,25 @@ export default function ContactPage() {
       </div>
 
       <div id="contact-faq" data-section="contact-faq">
-        <FaqSplitMedia
-          title="Frequently Asked Questions"
-          description="Everything you need to know about CatalogOS features, pricing, and deployment."
-          tag="Support"
-          textboxLayout="default"
-          imageSrc="http://img.b2bpic.net/free-photo/call-center-hot-line-information-concept_53876-125154.jpg"
-          imageAlt="FAQ support illustration"
-          mediaAnimation="slide-up"
+        <FaqSplitText
+          sideTitle="Frequently Asked Questions"
+          sideDescription="Everything you need to know about CatalogOS features, pricing, and deployment."
           faqsAnimation="slide-up"
           useInvertedBackground={true}
-          mediaPosition="right"
+          textPosition="left"
           faqs={[
             {
-              id: "faq-1",
-              title: "How does the bulk image import work?",
-              content: "Simply upload a ZIP file with your folder structure. Each folder becomes a product, subfolders become categories. The system automatically extracts, organizes, and optimizes all images. You can preview before confirming import.",
-            },
+              id: "faq-1",              title: "How does the bulk image import work?",              content: "Simply upload a ZIP file with your folder structure. Each folder becomes a product, subfolders become categories. The system automatically extracts, organizes, and optimizes all images. You can preview before confirming import."},
             {
-              id: "faq-2",
-              title: "Can I have unlimited category nesting?",
-              content: "Yes! CatalogOS supports unlimited hierarchical levels. Create parent categories, subcategories, and deeper nested structures as needed. The breadcrumb navigation automatically adjusts.",
-            },
+              id: "faq-2",              title: "Can I have unlimited category nesting?",              content: "Yes! CatalogOS supports unlimited hierarchical levels. Create parent categories, subcategories, and deeper nested structures as needed. The breadcrumb navigation automatically adjusts."},
             {
-              id: "faq-3",
-              title: "What about e-commerce and checkout?",
-              content: "Built-in shopping cart and checkout system. Admin can toggle e-commerce on/off, choose payment methods (Stripe, manual, cash-on-delivery). Everything is optional and configurable.",
-            },
+              id: "faq-3",              title: "What about e-commerce and checkout?",              content: "Built-in shopping cart and checkout system. Admin can toggle e-commerce on/off, choose payment methods (Stripe, manual, cash-on-delivery). Everything is optional and configurable."},
             {
-              id: "faq-4",
-              title: "How secure is the admin panel?",
-              content: "Enterprise-grade security with session-based authentication, rate limiting, and role-ready structure for future multi-admin support. All admin routes are protected.",
-            },
+              id: "faq-4",              title: "How secure is the admin panel?",              content: "Enterprise-grade security with session-based authentication, rate limiting, and role-ready structure for future multi-admin support. All admin routes are protected."},
             {
-              id: "faq-5",
-              title: "Is the platform scalable?",
-              content: "Absolutely. Handles 10,000+ products seamlessly. CDN-ready, database optimized, and built with production deployment in mind. Scales from startups to enterprises.",
-            },
+              id: "faq-5",              title: "Is the platform scalable?",              content: "Absolutely. Handles 10,000+ products seamlessly. CDN-ready, database optimized, and built with production deployment in mind. Scales from startups to enterprises."},
             {
-              id: "faq-6",
-              title: "What integrations are supported?",
-              content: "Stripe for payments, multiple image CDN providers, and a clean API for custom integrations. Multi-language and multi-admin support are planned.",
-            },
+              id: "faq-6",              title: "What integrations are supported?",              content: "Stripe for payments, multiple image CDN providers, and a clean API for custom integrations. Multi-language and multi-admin support are planned."},
           ]}
         />
       </div>
@@ -115,30 +90,27 @@ export default function ContactPage() {
           copyrightText="© 2025 CatalogOS | Professional Product Catalog Platform"
           columns={[
             {
-              title: "Product",
-              items: [
-                { label: "Features", href: "#features" },
-                { label: "Pricing", href: "#pricing" },
+              title: "Product",              items: [
+                { label: "Features", href: "/#features" },
+                { label: "Catalog", href: "/catalog" },
                 { label: "Bulk Import", href: "#" },
-                { label: "Admin Dashboard", href: "#" },
+                { label: "Admin Dashboard", href: "/admin" },
               ],
             },
             {
-              title: "Resources",
-              items: [
+              title: "Resources",              items: [
                 { label: "Documentation", href: "#" },
                 { label: "API Reference", href: "#" },
                 { label: "Guides", href: "#" },
-                { label: "Support", href: "#" },
+                { label: "Support", href: "/contact" },
               ],
             },
             {
-              title: "Company",
-              items: [
-                { label: "About Us", href: "#" },
+              title: "Company",              items: [
+                { label: "About Us", href: "/about" },
                 { label: "Blog", href: "#" },
                 { label: "Careers", href: "#" },
-                { label: "Contact", href: "#" },
+                { label: "Contact", href: "/contact" },
               ],
             },
           ]}
