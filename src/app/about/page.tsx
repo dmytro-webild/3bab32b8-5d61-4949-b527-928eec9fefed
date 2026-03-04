@@ -25,9 +25,9 @@ export default function AboutPage() {
           brandName="CatalogOS"
           navItems={[
             { name: "Public", id: "/" },
-            { name: "Features", id: "#features" },
-            { name: "Pricing", id: "#pricing" },
-            { name: "Docs", id: "#docs" },
+            { name: "Catalog", id: "/catalog" },
+            { name: "About", id: "/about" },
+            { name: "Contact", id: "/contact" },
           ]}
           button={{ text: "Launch Admin", href: "/admin" }}
           animateOnLoad={true}
@@ -61,29 +61,11 @@ export default function AboutPage() {
           useInvertedBackground={true}
           testimonials={[
             {
-              id: "test-1",
-              name: "Sarah Mitchell",
-              role: "CEO, Fashion Collective",
-              testimonial: "We migrated from multiple tools to CatalogOS and cut our inventory management time by 60%. The team loves the intuitive admin panel.",
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-middle-aged-business-leader-window_1262-5674.jpg?_wi=3",
-              imageAlt: "Sarah Mitchell",
-            },
+              id: "test-1",              name: "Sarah Mitchell",              role: "CEO, Fashion Collective",              testimonial: "We migrated from multiple tools to CatalogOS and cut our inventory management time by 60%. The team loves the intuitive admin panel.",              imageSrc: "http://img.b2bpic.net/free-photo/smiling-middle-aged-business-leader-window_1262-5674.jpg?_wi=3",              imageAlt: "Sarah Mitchell"},
             {
-              id: "test-2",
-              name: "David Kumar",
-              role: "Founder, TechGear Store",
-              testimonial: "The bulk import feature is a game-changer. We onboarded 8,000 products in a single afternoon. Performance is flawless.",
-              imageSrc: "http://img.b2bpic.net/free-photo/portrait-woman-working-business-with-computer_482257-20185.jpg?_wi=3",
-              imageAlt: "David Kumar",
-            },
+              id: "test-2",              name: "David Kumar",              role: "Founder, TechGear Store",              testimonial: "The bulk import feature is a game-changer. We onboarded 8,000 products in a single afternoon. Performance is flawless.",              imageSrc: "http://img.b2bpic.net/free-photo/portrait-woman-working-business-with-computer_482257-20185.jpg?_wi=3",              imageAlt: "David Kumar"},
             {
-              id: "test-3",
-              name: "Elena Rodriguez",
-              role: "Operations Director, Luxury Goods Co",
-              testimonial: "CatalogOS gives us the minimal aesthetic we love with enterprise-grade power underneath. Exactly what we needed.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-serious-businessman-looking-camera-meeting-headshot-portrait_1163-3923.jpg?_wi=3",
-              imageAlt: "Elena Rodriguez",
-            },
+              id: "test-3",              name: "Elena Rodriguez",              role: "Operations Director, Luxury Goods Co",              testimonial: "CatalogOS gives us the minimal aesthetic we love with enterprise-grade power underneath. Exactly what we needed.",              imageSrc: "http://img.b2bpic.net/free-photo/young-serious-businessman-looking-camera-meeting-headshot-portrait_1163-3923.jpg?_wi=3",              imageAlt: "Elena Rodriguez"},
           ]}
         />
       </div>
@@ -94,30 +76,27 @@ export default function AboutPage() {
           copyrightText="© 2025 CatalogOS | Professional Product Catalog Platform"
           columns={[
             {
-              title: "Product",
-              items: [
-                { label: "Features", href: "#features" },
-                { label: "Pricing", href: "#pricing" },
+              title: "Product",              items: [
+                { label: "Features", href: "/#features" },
+                { label: "Catalog", href: "/catalog" },
                 { label: "Bulk Import", href: "#" },
-                { label: "Admin Dashboard", href: "#" },
+                { label: "Admin Dashboard", href: "/admin" },
               ],
             },
             {
-              title: "Resources",
-              items: [
+              title: "Resources",              items: [
                 { label: "Documentation", href: "#" },
                 { label: "API Reference", href: "#" },
                 { label: "Guides", href: "#" },
-                { label: "Support", href: "#" },
+                { label: "Support", href: "/contact" },
               ],
             },
             {
-              title: "Company",
-              items: [
-                { label: "About Us", href: "#" },
+              title: "Company",              items: [
+                { label: "About Us", href: "/about" },
                 { label: "Blog", href: "#" },
                 { label: "Careers", href: "#" },
-                { label: "Contact", href: "#" },
+                { label: "Contact", href: "/contact" },
               ],
             },
           ]}
