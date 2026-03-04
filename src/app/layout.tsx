@@ -22,11 +22,13 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "CatalogOS | Professional Product Catalog Platform",  description: "Image-first product catalog platform with admin dashboard, bulk image import, hierarchical organization, and optional e-commerce. Built for scale and designed for minimal aesthetics.",  keywords: "product catalog, image gallery, admin dashboard, e-commerce, SaaS, bulk upload, inventory management",  metadataBase: new URL("https://catalogos.io"),
   alternates: {
-    canonical: "https://catalogos.io"},
+    canonical: "https://catalogos.io"
+  },
   openGraph: {
     title: "CatalogOS - Product Catalog Platform",    description: "Build and manage professional product catalogs with image browsing, admin controls, and e-commerce capabilities.",    siteName: "CatalogOS",    type: "website",    images: [
       {
-        url: "http://img.b2bpic.net/free-vector/ecommerce-email-template_52683-49444.jpg",        alt: "CatalogOS Platform"},
+        url: "http://img.b2bpic.net/free-vector/ecommerce-email-template_52683-49444.jpg",        alt: "CatalogOS Platform"
+      },
     ],
   },
   twitter: {
