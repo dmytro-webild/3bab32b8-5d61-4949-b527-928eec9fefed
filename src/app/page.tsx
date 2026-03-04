@@ -30,9 +30,9 @@ export default function HomePage() {
           brandName="CatalogOS"
           navItems={[
             { name: "Public", id: "/" },
-            { name: "Features", id: "#features" },
-            { name: "Pricing", id: "#pricing" },
-            { name: "Docs", id: "#docs" },
+            { name: "Catalog", id: "/catalog" },
+            { name: "About", id: "/about" },
+            { name: "Contact", id: "/contact" },
           ]}
           button={{ text: "Launch Admin", href: "/admin" }}
           animateOnLoad={true}
@@ -49,29 +49,14 @@ export default function HomePage() {
           background={{ variant: "glowing-orb" }}
           testimonials={[
             {
-              name: "Alex Chen",
-              handle: "Founder, RetailFlow",
-              testimonial: "CatalogOS transformed how we manage 10,000+ products. The bulk import saved us weeks of work.",
-              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-middle-aged-business-leader-window_1262-5674.jpg?_wi=1",
-              imageAlt: "Alex Chen portrait",
-            },
+              name: "Alex Chen",              handle: "Founder, RetailFlow",              testimonial: "CatalogOS transformed how we manage 10,000+ products. The bulk import saved us weeks of work.",              rating: 5,
+              imageSrc: "http://img.b2bpic.net/free-photo/smiling-middle-aged-business-leader-window_1262-5674.jpg?_wi=1",              imageAlt: "Alex Chen portrait"},
             {
-              name: "Maria Santos",
-              handle: "Operations Manager, StyleHub",
-              testimonial: "The admin dashboard is incredibly intuitive. Our team got up to speed in minutes, not days.",
-              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/portrait-woman-working-business-with-computer_482257-20185.jpg?_wi=1",
-              imageAlt: "Maria Santos portrait",
-            },
+              name: "Maria Santos",              handle: "Operations Manager, StyleHub",              testimonial: "The admin dashboard is incredibly intuitive. Our team got up to speed in minutes, not days.",              rating: 5,
+              imageSrc: "http://img.b2bpic.net/free-photo/portrait-woman-working-business-with-computer_482257-20185.jpg?_wi=1",              imageAlt: "Maria Santos portrait"},
             {
-              name: "James Wilson",
-              handle: "CTO, Digital Ventures",
-              testimonial: "Finally, a catalog platform that doesn't sacrifice performance or flexibility. Production-ready from day one.",
-              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/young-serious-businessman-looking-camera-meeting-headshot-portrait_1163-3923.jpg?_wi=1",
-              imageAlt: "James Wilson portrait",
-            },
+              name: "James Wilson",              handle: "CTO, Digital Ventures",              testimonial: "Finally, a catalog platform that doesn't sacrifice performance or flexibility. Production-ready from day one.",              rating: 5,
+              imageSrc: "http://img.b2bpic.net/free-photo/young-serious-businessman-looking-camera-meeting-headshot-portrait_1163-3923.jpg?_wi=1",              imageAlt: "James Wilson portrait"},
           ]}
           buttons={[
             { text: "Start Free Trial", href: "#" },
@@ -92,32 +77,16 @@ export default function HomePage() {
           features={[
             {
               id: 1,
-              title: "Image-First Grid Layout",
-              description: "Beautiful, responsive grid-based product browsing optimized for mobile and desktop. High-speed image loading with CDN-ready architecture.",
-              imageSrc: "http://img.b2bpic.net/free-vector/simple-ux-storyboard_742173-4525.jpg?_wi=1",
-              imageAlt: "Product grid layout showcase",
-            },
+              title: "Image-First Grid Layout",              description: "Beautiful, responsive grid-based product browsing optimized for mobile and desktop. High-speed image loading with CDN-ready architecture.",              imageSrc: "http://img.b2bpic.net/free-vector/simple-ux-storyboard_742173-4525.jpg?_wi=1",              imageAlt: "Product grid layout showcase"},
             {
               id: 2,
-              title: "Powerful Admin Dashboard",
-              description: "Shopify-like admin interface with secure authentication, category management, product editing, and real-time analytics.",
-              imageSrc: "http://img.b2bpic.net/free-photo/luxurious-boardroom-space-within-multinational-company-used-meetings_482257-124520.jpg",
-              imageAlt: "Admin dashboard interface",
-            },
+              title: "Powerful Admin Dashboard",              description: "Shopify-like admin interface with secure authentication, category management, product editing, and real-time analytics.",              imageSrc: "http://img.b2bpic.net/free-photo/luxurious-boardroom-space-within-multinational-company-used-meetings_482257-124520.jpg",              imageAlt: "Admin dashboard interface"},
             {
               id: 3,
-              title: "Bulk Image Import (ZIP)",
-              description: "Automatically extract, organize, and import hundreds of images at once. Folder structure becomes products and categories instantly.",
-              imageSrc: "http://img.b2bpic.net/free-vector/concept-transfer-files-landing-page_52683-26836.jpg",
-              imageAlt: "Bulk upload interface",
-            },
+              title: "Bulk Image Import (ZIP)",              description: "Automatically extract, organize, and import hundreds of images at once. Folder structure becomes products and categories instantly.",              imageSrc: "http://img.b2bpic.net/free-vector/concept-transfer-files-landing-page_52683-26836.jpg",              imageAlt: "Bulk upload interface"},
             {
               id: 4,
-              title: "Hierarchical Organization",
-              description: "Unlimited category nesting levels. Organize products by parent-child relationships with seamless breadcrumb navigation.",
-              imageSrc: "http://img.b2bpic.net/free-vector/simple-ux-storyboard_742173-4525.jpg?_wi=2",
-              imageAlt: "Category hierarchy structure",
-            },
+              title: "Hierarchical Organization",              description: "Unlimited category nesting levels. Organize products by parent-child relationships with seamless breadcrumb navigation.",              imageSrc: "http://img.b2bpic.net/free-vector/simple-ux-storyboard_742173-4525.jpg?_wi=2",              imageAlt: "Category hierarchy structure"},
           ]}
           animationType="blur-reveal"
           useInvertedBackground={false}
@@ -136,47 +105,17 @@ export default function HomePage() {
           useInvertedBackground={true}
           products={[
             {
-              id: "prod-1",
-              name: "Premium Product A",
-              price: "$149.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=1",
-              imageAlt: "Premium product A",
-            },
+              id: "prod-1",              name: "Premium Product A",              price: "$149.99",              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=1",              imageAlt: "Premium product A"},
             {
-              id: "prod-2",
-              name: "Deluxe Item B",
-              price: "$249.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=1",
-              imageAlt: "Deluxe item B",
-            },
+              id: "prod-2",              name: "Deluxe Item B",              price: "$249.99",              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=1",              imageAlt: "Deluxe item B"},
             {
-              id: "prod-3",
-              name: "Exclusive Collection C",
-              price: "$199.99",
-              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=1",
-              imageAlt: "Exclusive collection C",
-            },
+              id: "prod-3",              name: "Exclusive Collection C",              price: "$199.99",              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=1",              imageAlt: "Exclusive collection C"},
             {
-              id: "prod-4",
-              name: "Limited Edition D",
-              price: "$299.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=2",
-              imageAlt: "Limited edition D",
-            },
+              id: "prod-4",              name: "Limited Edition D",              price: "$299.99",              imageSrc: "http://img.b2bpic.net/free-photo/sustainability-concept-with-blank-geometric-forms-growing-plant_23-2148994248.jpg?_wi=2",              imageAlt: "Limited edition D"},
             {
-              id: "prod-5",
-              name: "Premium Selection E",
-              price: "$179.99",
-              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=2",
-              imageAlt: "Premium selection E",
-            },
+              id: "prod-5",              name: "Premium Selection E",              price: "$179.99",              imageSrc: "http://img.b2bpic.net/free-photo/yellow-model-career-kit-arrangement_23-2150083956.jpg?_wi=2",              imageAlt: "Premium selection E"},
             {
-              id: "prod-6",
-              name: "Signature Line F",
-              price: "$219.99",
-              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=2",
-              imageAlt: "Signature line F",
-            },
+              id: "prod-6",              name: "Signature Line F",              price: "$219.99",              imageSrc: "http://img.b2bpic.net/free-psd/cyber-monday-landing-page-template_23-2149839009.jpg?_wi=2",              imageAlt: "Signature line F"},
           ]}
         />
       </div>
@@ -208,28 +147,16 @@ export default function HomePage() {
           useInvertedBackground={false}
           metrics={[
             {
-              id: "metric-1",
-              value: "500M+",
-              title: "Images served monthly",
-              items: ["CDN-optimized delivery", "Sub-100ms load times", "Mobile-first performance"],
+              id: "metric-1",              value: "500M+",              title: "Images served monthly",              items: ["CDN-optimized delivery", "Sub-100ms load times", "Mobile-first performance"],
             },
             {
-              id: "metric-2",
-              value: "2,500+",
-              title: "Active catalog businesses",
-              items: ["From boutiques to enterprises", "Multiple industries served", "Global customer base"],
+              id: "metric-2",              value: "2,500+",              title: "Active catalog businesses",              items: ["From boutiques to enterprises", "Multiple industries served", "Global customer base"],
             },
             {
-              id: "metric-3",
-              value: "99.9%",
-              title: "Platform uptime SLA",
-              items: ["Enterprise-grade infrastructure", "Redundant systems", "24/7 monitoring"],
+              id: "metric-3",              value: "99.9%",              title: "Platform uptime SLA",              items: ["Enterprise-grade infrastructure", "Redundant systems", "24/7 monitoring"],
             },
             {
-              id: "metric-4",
-              value: "60%",
-              title: "Average time saved weekly",
-              items: ["Automated bulk imports", "Streamlined admin workflows", "No manual data entry"],
+              id: "metric-4",              value: "60%",              title: "Average time saved weekly",              items: ["Automated bulk imports", "Streamlined admin workflows", "No manual data entry"],
             },
           ]}
         />
@@ -245,53 +172,17 @@ export default function HomePage() {
           useInvertedBackground={true}
           testimonials={[
             {
-              id: "test-1",
-              name: "Sarah Mitchell",
-              role: "CEO, Fashion Collective",
-              testimonial: "We migrated from multiple tools to CatalogOS and cut our inventory management time by 60%. The team loves the intuitive admin panel.",
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-middle-aged-business-leader-window_1262-5674.jpg?_wi=2",
-              imageAlt: "Sarah Mitchell",
-            },
+              id: "test-1",              name: "Sarah Mitchell",              role: "CEO, Fashion Collective",              testimonial: "We migrated from multiple tools to CatalogOS and cut our inventory management time by 60%. The team loves the intuitive admin panel.",              imageSrc: "http://img.b2bpic.net/free-photo/smiling-middle-aged-business-leader-window_1262-5674.jpg?_wi=2",              imageAlt: "Sarah Mitchell"},
             {
-              id: "test-2",
-              name: "David Kumar",
-              role: "Founder, TechGear Store",
-              testimonial: "The bulk import feature is a game-changer. We onboarded 8,000 products in a single afternoon. Performance is flawless.",
-              imageSrc: "http://img.b2bpic.net/free-photo/portrait-woman-working-business-with-computer_482257-20185.jpg?_wi=2",
-              imageAlt: "David Kumar",
-            },
+              id: "test-2",              name: "David Kumar",              role: "Founder, TechGear Store",              testimonial: "The bulk import feature is a game-changer. We onboarded 8,000 products in a single afternoon. Performance is flawless.",              imageSrc: "http://img.b2bpic.net/free-photo/portrait-woman-working-business-with-computer_482257-20185.jpg?_wi=2",              imageAlt: "David Kumar"},
             {
-              id: "test-3",
-              name: "Elena Rodriguez",
-              role: "Operations Director, Luxury Goods Co",
-              testimonial: "CatalogOS gives us the minimal aesthetic we love with enterprise-grade power underneath. Exactly what we needed.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-serious-businessman-looking-camera-meeting-headshot-portrait_1163-3923.jpg?_wi=2",
-              imageAlt: "Elena Rodriguez",
-            },
+              id: "test-3",              name: "Elena Rodriguez",              role: "Operations Director, Luxury Goods Co",              testimonial: "CatalogOS gives us the minimal aesthetic we love with enterprise-grade power underneath. Exactly what we needed.",              imageSrc: "http://img.b2bpic.net/free-photo/young-serious-businessman-looking-camera-meeting-headshot-portrait_1163-3923.jpg?_wi=2",              imageAlt: "Elena Rodriguez"},
             {
-              id: "test-4",
-              name: "Michael Chen",
-              role: "Head of E-commerce, RetailNet",
-              testimonial: "The hierarchical category system is brilliant. Customers love the clean navigation. Conversion rates are up 35%.",
-              imageSrc: "http://img.b2bpic.net/free-photo/blond-businessman-happy-expression_1194-3797.jpg",
-              imageAlt: "Michael Chen",
-            },
+              id: "test-4",              name: "Michael Chen",              role: "Head of E-commerce, RetailNet",              testimonial: "The hierarchical category system is brilliant. Customers love the clean navigation. Conversion rates are up 35%.",              imageSrc: "http://img.b2bpic.net/free-photo/blond-businessman-happy-expression_1194-3797.jpg",              imageAlt: "Michael Chen"},
             {
-              id: "test-5",
-              name: "Jessica Thompson",
-              role: "Product Manager, StyleHub",
-              testimonial: "Admin dashboard feels like Shopify but optimized for catalog businesses. Support team is incredibly responsive.",
-              imageSrc: "http://img.b2bpic.net/free-photo/businesswoman-office-engages-communication-virtual-presentation-talking_482257-133582.jpg",
-              imageAlt: "Jessica Thompson",
-            },
+              id: "test-5",              name: "Jessica Thompson",              role: "Product Manager, StyleHub",              testimonial: "Admin dashboard feels like Shopify but optimized for catalog businesses. Support team is incredibly responsive.",              imageSrc: "http://img.b2bpic.net/free-photo/businesswoman-office-engages-communication-virtual-presentation-talking_482257-133582.jpg",              imageAlt: "Jessica Thompson"},
             {
-              id: "test-6",
-              name: "Robert Schmidt",
-              role: "CTO, Digital Marketplace",
-              testimonial: "The architecture is clean and scalable. API is well-documented. Integration was seamless. Highly recommended.",
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-senior-leader-meeting-with-his-team_1262-2160.jpg",
-              imageAlt: "Robert Schmidt",
-            },
+              id: "test-6",              name: "Robert Schmidt",              role: "CTO, Digital Marketplace",              testimonial: "The architecture is clean and scalable. API is well-documented. Integration was seamless. Highly recommended.",              imageSrc: "http://img.b2bpic.net/free-photo/smiling-senior-leader-meeting-with-his-team_1262-2160.jpg",              imageAlt: "Robert Schmidt"},
           ]}
         />
       </div>
@@ -302,30 +193,27 @@ export default function HomePage() {
           copyrightText="© 2025 CatalogOS | Professional Product Catalog Platform"
           columns={[
             {
-              title: "Product",
-              items: [
-                { label: "Features", href: "#features" },
-                { label: "Pricing", href: "#pricing" },
+              title: "Product",              items: [
+                { label: "Features", href: "/#features" },
+                { label: "Catalog", href: "/catalog" },
                 { label: "Bulk Import", href: "#" },
-                { label: "Admin Dashboard", href: "#" },
+                { label: "Admin Dashboard", href: "/admin" },
               ],
             },
             {
-              title: "Resources",
-              items: [
+              title: "Resources",              items: [
                 { label: "Documentation", href: "#" },
                 { label: "API Reference", href: "#" },
                 { label: "Guides", href: "#" },
-                { label: "Support", href: "#" },
+                { label: "Support", href: "/contact" },
               ],
             },
             {
-              title: "Company",
-              items: [
-                { label: "About Us", href: "#" },
+              title: "Company",              items: [
+                { label: "About Us", href: "/about" },
                 { label: "Blog", href: "#" },
                 { label: "Careers", href: "#" },
-                { label: "Contact", href: "#" },
+                { label: "Contact", href: "/contact" },
               ],
             },
           ]}
