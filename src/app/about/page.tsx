@@ -39,7 +39,7 @@ export default function AboutPage() {
           tag="Our Story"
           title="Building the Future of Product Catalogs"
           description="CatalogOS was founded with a simple mission: to empower businesses of all sizes to showcase their products beautifully and manage them effortlessly. We believe that catalog management shouldn't be complicated. That's why we built a platform that combines elegance with power, simplicity with scale."
-          imageSrc="http://img.b2bpic.net/free-photo/saas-concept-collage_23-2149399295.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/saas-concept-collage_23-2149399295.jpg?_wi=2"
           imageAlt="CatalogOS platform overview"
           mediaAnimation="slide-up"
           metricsAnimation="slide-up"
@@ -65,7 +65,7 @@ export default function AboutPage() {
               name: "Sarah Mitchell",
               role: "CEO, Fashion Collective",
               testimonial: "We migrated from multiple tools to CatalogOS and cut our inventory management time by 60%. The team loves the intuitive admin panel.",
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-middle-aged-business-leader-window_1262-5674.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/smiling-middle-aged-business-leader-window_1262-5674.jpg?_wi=3",
               imageAlt: "Sarah Mitchell",
             },
             {
@@ -73,7 +73,7 @@ export default function AboutPage() {
               name: "David Kumar",
               role: "Founder, TechGear Store",
               testimonial: "The bulk import feature is a game-changer. We onboarded 8,000 products in a single afternoon. Performance is flawless.",
-              imageSrc: "http://img.b2bpic.net/free-photo/portrait-woman-working-business-with-computer_482257-20185.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/portrait-woman-working-business-with-computer_482257-20185.jpg?_wi=3",
               imageAlt: "David Kumar",
             },
             {
@@ -81,7 +81,7 @@ export default function AboutPage() {
               name: "Elena Rodriguez",
               role: "Operations Director, Luxury Goods Co",
               testimonial: "CatalogOS gives us the minimal aesthetic we love with enterprise-grade power underneath. Exactly what we needed.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-serious-businessman-looking-camera-meeting-headshot-portrait_1163-3923.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/young-serious-businessman-looking-camera-meeting-headshot-portrait_1163-3923.jpg?_wi=3",
               imageAlt: "Elena Rodriguez",
             },
           ]}
